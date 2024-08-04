@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6846b8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+main {
+    padding: 70px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    background-image: url(https://fbcoverstreet.com/content/BGvijprCNVzG23ljKktrAoE5NsopdLXZ2OgkckXUrZtD5cksQfxUv3vWBzVzBChB.jpg);
+
+
+}
+
+.photo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20%;
+}
+
+.profile {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.experience,
+.skills,
+.education,
+.awards,
+.philosophy {
+    grid-column: 1 / 3;
+    box-shadow: rgba(44, 5, 26, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 30px;
+}
+
+h2 {
+    color: #1a3d7c;
+    margin-top: 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+.skills ul li {
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.skills ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.education,
+.awards,
+.philosophy {
+    margin-top: 20px;
+}
+
+.education ul li,
+.awards ul li,
+.philosophy ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.education ul li:hover,
+.awards ul li:hover,
+.philosophy ul li:hover {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+
+    /* Add styles for smaller screens here */
+    header>h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        margin-bottom: 100px;
+    }
+
+
+    .profile,
+    .photo,
+    .experience,
+    .skills,
+    .education,
+    .awards,
+    .philosophy {
+        grid-column: 1 / 3;
+    }
+}
